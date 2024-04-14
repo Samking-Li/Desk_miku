@@ -21,7 +21,7 @@ class TablePet(QWidget):
             self.key += 1
         else:
             self.key = 1
-        self.pic_url = 'source\diana_' + self.path + '\diana_' + str(self.key) + '.png'
+        self.pic_url = 'source\miku_' + self.path + '\miku_' + str(self.key) + '.png'
         self.pm = QPixmap(self.pic_url)
         self.lbl.setPixmap(self.pm)
         if self.key ==4 and self.flag =='falling':
@@ -61,7 +61,7 @@ class TablePet(QWidget):
         self.setGeometry(self.w, self.h, 300, 300)
         self.lbl = QLabel(self)
         self.key = 1
-        self.pic_url = 'source\diana_' + self.path + '\diana_' + str(self.key) + '.png'
+        self.pic_url = 'source\miku_' + self.path + '\miku_' + str(self.key) + '.png'
         self.pm = QPixmap(self.pic_url)
         self.lbl.setPixmap(self.pm)
 
@@ -74,7 +74,7 @@ class TablePet(QWidget):
         # 系统托盘
     def tray(self):
         tp = QSystemTrayIcon(self)
-        tp.setIcon(QIcon('source\diana_walk\diana_0.png'))
+        tp.setIcon(QIcon('source\miku_walk\miku_0.png'))
         ation_quit = QAction('QUIT', self, triggered=self.quit)
         tpMenu = QMenu(self)
         tpMenu.addAction(ation_quit)
